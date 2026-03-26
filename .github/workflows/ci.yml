@@ -50,10 +50,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # 8️⃣ Build Docker image
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository }}/mini-pricing-api:latest -f docker/Dockerfile .
+        run: docker build -t ghcr.io/lophsp/minipricingplatform/mini-pricing-api:latest -f docker/Dockerfile .
 
-      # 9️⃣ Push Docker image to GHCR
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository }}/mini-pricing-api:latest
+        run: docker push ghcr.io/lophsp/minipricingplatform/mini-pricing-api:latest
