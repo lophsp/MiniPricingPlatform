@@ -1,0 +1,6 @@
+@MiniPricingPlatform.API_HostAddress = http://localhost:5550
+
+GET {{MiniPricingPlatform.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

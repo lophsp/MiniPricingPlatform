@@ -1,0 +1,35 @@
+[
+  {
+    "Min": 1.0,
+    "Max": 7.0,
+    "Price": 120.0,
+    "Id": "a369685c-5607-4578-ac1b-03006123b37a",
+    "Priority": 1,
+    "EffectiveFrom": "2026-01-01T00:00:00Z",
+    "EffectiveTo": "2026-12-31T23:59:59Z",
+    "IsActive": true,
+    "type": "weighttier"
+  },
+  {
+    "StartTime": "18:00:00",
+    "EndTIme": "22:00:00",
+    "DiscountPercent": 10.0,
+    "Id": "475e6d77-feaa-4e35-a340-c640031c8b94",
+    "Priority": 3,
+    "EffectiveFrom": "2026-03-01T00:00:00Z",
+    "EffectiveTo": "2026-03-31T23:59:59Z",
+    "IsActive": true,
+    "type": "timewindowpromotion"
+  },
+  {
+    "StartTime": "18:00:00",
+    "EndTIme": "22:00:00",
+    "DiscountPercent": 10.0,
+    "Id": "e05e8ead-b9a7-4e65-b4f1-566d4b5797d2",
+    "Priority": 3,
+    "EffectiveFrom": "2026-03-01T00:00:00Z",
+    "EffectiveTo": "2026-03-31T23:59:59Z",
+    "IsActive": true,
+    "type": "timewindowpromotion"
+  }
+]
