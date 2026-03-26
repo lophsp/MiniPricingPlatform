@@ -43,7 +43,7 @@ jobs:
         run: dotnet format MiniPricingPlatform.sln
 
       - name: Build Docker image
-        run: docker build -t mini-pricing-api .
+        run: docker build -t mini-pricing-api -f docker/Dockerfile .
 
       - name: Save Docker image as tar
         run: docker save mini-pricing-api:latest -o mini-pricing-api.tar
