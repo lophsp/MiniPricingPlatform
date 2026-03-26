@@ -14,3 +14,6 @@ test:
 
 clean:
 	dotnet clean
+
+dup:
+	docker-compose up --build -d

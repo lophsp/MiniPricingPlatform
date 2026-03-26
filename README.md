@@ -50,15 +50,15 @@ MiniPricingPlatform
 ### Prerequisites
 
 * .NET 8 SDK
-* Docker (optional for containerized setup)
+* Docker
 
 ### Steps
 
 1. Clone repository:
 
 ```bash
-git clone https://github.com/your-username/mini-pricing-platform.git
-cd mini-pricing-platform
+git clone https://github.com/lophsp/MiniPricingPlatform.git
+cd MiniPricingPlatform
 ```
 
 2. Build project:
@@ -71,12 +71,16 @@ dotnet build
 
 ```bash
 dotnet run --project MiniPricingPlatform.API
+or
+make run
 ```
 
 4. (Optional) Run using Docker:
 
 ```bash
 docker-compose up --build
+or
+make dup
 ```
 
 5. Access Swagger UI at: `http://localhost:8080/swagger`
