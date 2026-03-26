@@ -32,7 +32,7 @@ public class QuotesController : ControllerBase
 
         return Ok(new PricingResponseDto { Price = price });
     }
-    
+
     [HttpPost("bulk")]
     public IActionResult Bulk([FromBody] BulkRequestDto request)
     {

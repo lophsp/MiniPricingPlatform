@@ -25,7 +25,7 @@ public class JobService : IJobService
                 PropertyNameCaseInsensitive = true
             };
             var json = JsonSerializer.Serialize(items);
-            parsedItems = JsonSerializer.Deserialize<List<BulkItemInput>>(json,options)
+            parsedItems = JsonSerializer.Deserialize<List<BulkItemInput>>(json, options)
                           ?? new List<BulkItemInput>();
         }
         else if (type.ToLower() == "csv")
