@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-test-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup .NET 8 SDK
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      # 3️⃣ Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 4️⃣ Build solution
+      - name: Build solution
+        run: dotnet build --no-restore --configuration Release
+
+      # 5️⃣ Run tests
+      - name: Run tests
+        run: dotnet test --no-build --verbosity normal
+
+      # 6️⃣ Lint using dotnet format
+      - name: Install dotnet format
+        run: dotnet tool install -g dotnet-format
+
+      - name: Run dotnet format
+        run: dotnet format --check
