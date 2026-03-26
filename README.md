@@ -346,3 +346,6 @@ Delete a rule by ID.
 * **Rule Priority**: Lower `Priority` executes first.
 * **Price Calculation**: `WeightTier` sets the base price, `RemoteAreaSurcharge` adds surcharge, `TimeWindowPromotion` applies discount.
 * **Bulk Requests**: Use `/quotes/bulk` for multiple calculations, then check `/jobs/{job_id}` for results.
+
+
+## ผมทำได้ประมาณนี้เองครับ พวก Bonus (Optional) ผมไม่มีเวลาทำเลยครับผมต้องไปทำธุระด่วนต่อทำได้ได้ลองทำแค่บางอันครับ หากมีส่วนไหนผิดปกติยังไงแจ้งผมได้นะครับ หากพี่ๆน review แล้วไม่ผ่าน รบกวนแจ้งหน่อยนะครับ ผมจะได้เอาไปพัฒนาต่อว่าต้องทำอะไรแบบไหนเพิ่มบ้าง ผมพร้อมรับคำติชมจากพี่ๆครับ ขอบคุณสำหรับโอกาสในการทดลองทำข้อสอบนะครับ ขอบคุณครับ
