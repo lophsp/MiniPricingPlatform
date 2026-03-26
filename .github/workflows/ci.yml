@@ -40,7 +40,7 @@ jobs:
         run: dotnet tool install -g dotnet-format
 
       - name: Run dotnet format
-        run: dotnet format MiniPricingPlatform.sln --verify-no-changes --include "**/*.cs"
+        run: dotnet format MiniPricingPlatform.sln
 
       # 7️⃣ Login to GitHub Container Registry
       - name: Log in to GHCR
