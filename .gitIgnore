@@ -10,4 +10,5 @@ MiniPricingPlatform.Domain/obj/**
 MiniPricingPlatform.Infrastructure/bin/**
 MiniPricingPlatform.Infrastructure/obj/**
 
-MiniPricingPlatform.Tests
+MiniPricingPlatform.Tests/bin/**
+MiniPricingPlatform.Tests/obj/**
