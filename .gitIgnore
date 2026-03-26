@@ -1,0 +1,13 @@
+MiniPricingPlatform.API/obj**
+MiniPricingPlatform.API/bin/**
+
+MiniPricingPlatform.Application/bin/**
+MiniPricingPlatform.Application/obj/**
+
+MiniPricingPlatform.Domain/bin/**
+MiniPricingPlatform.Domain/obj/**
+
+MiniPricingPlatform.Infrastructure/bin/**
+MiniPricingPlatform.Infrastructure/obj/**
+
+MiniPricingPlatform.Tests
